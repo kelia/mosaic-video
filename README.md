@@ -1,5 +1,10 @@
 # mosaic-video
 
+<p align="center">
+  <img src="./mosaic-video.gif" alt="mosaic-video">
+</p>
+
+
 1. Create a bunch of videos you want to mosaic.
 2. Save frames of video to folder
 ```

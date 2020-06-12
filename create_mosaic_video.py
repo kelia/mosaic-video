@@ -43,7 +43,7 @@ if n_stack % 2 == 0:
 ########################################################
 # Define data root directory, find subdirectories
 ########################################################
-output_dir = os.path.join(root_dir, "../output_video")
+output_dir = os.path.join(root_dir, "../output_frames")
 print("Creating multivideo in directory [%s]." % output_dir)
 try:
     # Create target Directory
@@ -141,6 +141,6 @@ for frame_idx in range(1, des_num_frames):
 
     # final resizing
     frame_out = cv2.resize(frame_subset, out_dim, interpolation=cv2.INTER_AREA)
-    out_filename = os.path.join(root_dir, "../output_video/out_frame_{:05d}.png".format(frame_idx))
+    out_filename = os.path.join(root_dir, "../output_frames/out_frame_{:05d}.png".format(frame_idx))
     print("Saving final frame to [%s]." % out_filename)
     cv2.imwrite(out_filename, frame_out)
